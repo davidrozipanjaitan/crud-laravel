@@ -3,29 +3,32 @@
 
 @section('content')
 
+</br>
+
 <div class="row">
 	<div class="col-lg-12 margin-tb">
-		<div class="full-left">
+		<div class="pull-left">
 			<h2>Simple Project</h2>		
 		</div>
 		
-		<div class="full-right">
+		<div class="pull-right">
 			<a class="btn btn-success" href={{ route('products.create')}}>Create New Products</a>
 		</div>
 	</div>
 </div>
 
+</br>
 
 @if ($message = Session::get('success'))
 	<div class="aler alert-success">
-		<p>{{ $message }}</p?
+		<p>{{ $message }}</p>
 	</div>
 @endif
 
 
 <table class="table table-bordered">
     <tr>
-		<th>No</th>
+		<th width="5%">No</th>
         <th>Name</th>
 		<th>Details</th>
         <th width="280px">Action</th>
